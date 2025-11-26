@@ -17,7 +17,7 @@ app = FastAPI(title="LLM Council API")
 # Enable CORS for local development and remote access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "http://21.0.0.70:5173"],
+    allow_origins=["*"],  # Allow all origins for development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

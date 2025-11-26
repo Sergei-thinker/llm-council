@@ -5,7 +5,7 @@
 // Use the server's IP for remote access, or localhost if running locally
 const API_BASE = window.location.hostname === 'localhost'
   ? 'http://localhost:8001'
-  : 'http://21.0.0.70:8001';
+  : `http://${window.location.hostname}:8001`;
 
 export const api = {
   /**
